@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Finding elements by ID</title>
+    </head>
+    <body>
+
+        <h1 id="heading">All about dogs</h1>
+        
+        <p>The <span class = "cat">cat </span> (Felis catus) is a domestic species of small carnivorous mammal. </p>
+        <p>It is the only domesticated species in the family Felidae and is commonly referred to as the domestic cat or house cat to distinguish it from the wild members of the family. A cat can either be a house cat, a farm cat, or a feral cat; the latter ranges freely and avoids human contact.</p>
+        <p>Domestic cats are valued by humans for companionship and their ability to kill rodents. About 60 cat breeds are recognized by various cat registries. <a id="clicker" href="#">Click here</a>.</p>
+        
+        <img id = "clickedImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Feral_cat_Virginia_crop.jpg/1024px-Feral_cat_Virginia_crop.jpg" height="300" alt="Walking Cat">
+        
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Juvenile_Ragdoll.jpg/1920px-Juvenile_Ragdoll.jpg" height="300" alt="Kitten">
+        
+        <script>
+            let imgNode = document.getElementById("clickedImg");
+            
+            let clickerButton = document.getElementById("clicker");
+            let onButtonClick = function() {
+                imgNode.src = "https://i.natgeofe.com/n/5d00b0cc-ab95-4522-ad13-7c65b7589e6b/NationalGeographic_748483.jpg?w=636&h=424";
+            }
+            
+            clickerButton.addEventListener("click", onButtonClick);
+            
+
+        </script>
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </body>
+</html>
